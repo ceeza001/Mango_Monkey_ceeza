@@ -1,50 +1,56 @@
-import { motion } from "framer-motion"
-import Matrix from "./Matrix"
-import { Button } from "@/components/ui/button"
+import { Link } from "react-router-dom"
+
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
 const Hero = () => {
-  
   return (
-    <div className="flex md:h-[600px] justify-between flex-wrap-reverse md:flex-nowrap gap-10 md:p-[4rem]">
-      <div className="px-[1rem] relative w-full">
-        <div className="md:absolute bottom-0 left-0">
-          <p className="h3-semibold mb-2">
-            Hello World! I'm <span className="h3-bold gradient-text">Ceeza</span>,
-          </p>
+    <BackgroundGradientAnimation>
+      <div className="mt-[4rem] absolute z-50 flex flex-wrap-reverse md:flex-nowrap justify-between items-center gap-8 p-[1rem] md:p-[6rem]">
+        <div className="w-full space-y-8 md:space-y-10">
+          <h1 className="font-bold text-[30px] md:text-[40px] leading-[101%] text-[#FB89C0] drop-shadow-2xl">
+            A Digital Jungle on the TON Blockchain.
+          </h1>
           <p>
-            A Web 3.0 Frontend Developer with a poetic touch. Let my code tell stories and my designs paint dreams. Dive into simplicity with a touch of elegance.
+            Join the adventure of Mango monkey and unlock digital secrets, share knowledge and go green!
           </p>
-          <Button className="my-4 shad-button bg-primary-600 border border-dark-3 base-semibold py-[0.8rem]">
-            <p>Explore</p>
-            <motion.div
-              animate={{
-                x: [0, 4, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
+
+          <div className="z-[900] flex items-center gap-2">
+            <Link to="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NjgyMjU3MjA3MCwidG9rZW5fYWRkcmVzcyI6IkVRQjc0eGluYVJ0NHB5YmszaTJtSWdOV2x6R3BzQlNYZVFIeGpoNmt3VFh5RVZLbyJ9" 
+              className="p-[0.8rem] rounded-[30px] bg-[#315F56]"
             >
+              Get $MANGO
+            </Link>
+            
+            <Link to="https://t.me/mangoworldportal">
               <img 
-                src="/assets/icons/enter.svg" 
-                className="w-6"
+                src="/assets/icons/telegram.svg"
+                alt="telegram"
+                width={50}
+                height={50}
               />
-            </motion.div>
-          </Button>
+            </Link>
+            
+            <Link to="https://x.com/Mango_On_Ton" className="relative">
+              <span className="bg-white top-2 left-2 absolute z-[-1] h-[2rem] w-[2rem]" />
+              <img 
+                src="/assets/icons/x.svg"
+                alt="X-twitter"
+                width={50}
+                height={50}
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="w-full flex items-center justify-center h-full">
+          <img 
+            src="/assets/monkey.png" 
+            alt="Mango monkey" 
+            className="w-[15rem] md:w-[20rem] aspect-square"
+          />
         </div>
       </div>
-
-      <div className="relative w-full md:h-full flex items-end justify-center">
-        <img
-          src="/assets/silhouette.png"
-          alt="silhouette"
-          className="h-4/5 md:h-full"
-        />
-        <Matrix />
-      </div>      
-    </div>
-  )
-}
+    </BackgroundGradientAnimation>
+  );
+};
 
 export default Hero;

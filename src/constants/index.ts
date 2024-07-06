@@ -1,51 +1,30 @@
-export const sidebarLinks = [
+export const features = [
   {
-    imgURL: "/assets/icons/home.svg",
-    route: "/",
-    label: "Home",
+    title: "Thriving Forest",
+    content: "Lush digital jungles erupt with towering trees, their branches forming natural bridges. Crystal waterfalls cascade, feeding rivers that snake through the vibrant landscape. It's a digital oasis unlike any other!",
   },
   {
-    imgURL: "/assets/icons/wallpaper.svg",
-    route: "/explore",
-    label: "Explore",
+    title: "Advanced Tech",
+    content: "In Mango World, nature thrives alongside cutting-edge tech powered by Ton blockchain! Futuristic gadgets and magical devices blend with the vibrant jungle, creating a unique paradise where innovation and ecology become one.",
   },
   {
-    imgURL: "/assets/icons/people.svg",
-    route: "/all-users",
-    label: "People",
-  },
-  {
-    imgURL: "/assets/icons/bookmark.svg",
-    route: "/saved",
-    label: "Saved",
-  },
-  {
-    imgURL: "/assets/icons/gallery-add.svg",
-    route: "/write-poem",
-    label: "Write Poem",
+    title: "Fantastical Fauna",
+    content: "Ton blockchain brings Mango World to life! Here, extraordinary creatures roam, each a marvel of digital engineering. Mango, the smartest monkey around, leads the way, ready to unlock the jungle's secrets!",
   },
 ];
 
-export const bottombarLinks = [
+export const missions = [
   {
-    imgURL: "/assets/icons/home.svg",
-    route: "/",
-    label: "Home",
+    title: "Mini-app Game",
+    content: "With a mini-app game currently in development, you will assist Mango as He explores diverse landscapes, collects rewards, defends His land, and unlocks the secrets of Mango World on Telegram!",
   },
   {
-    imgURL: "/assets/icons/wallpaper.svg",
-    route: "/explore",
-    label: "Explore",
+    title: "DeFi",
+    content: "With ongoing integrations on the TON blockchain, you can borrow, lend, and even trade $MANGO on all major DeFi platforms powered by TON blockchain technology.",
   },
   {
-    imgURL: "/assets/icons/bookmark.svg",
-    route: "/saved",
-    label: "Saved",
-  },
-  {
-    imgURL: "/assets/icons/gallery-add.svg",
-    route: "/write-poem",
-    label: "Write",
+    title: "Staking",
+    content: "Earn rewards as incentive for locking your $MANGO hodlings , helping secure the TON blockchain while collecting rewards.",
   },
 ];
 
